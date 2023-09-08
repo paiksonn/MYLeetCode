@@ -5,8 +5,7 @@ class Solution:
         p1, p2 = 0, 0
         ans = ''
         while p1 < len(word1) and p2 < len(word2):
-            ans += word1[p1]
-            ans += word2[p2]
+            ans += word1[p1] + word2[p2] 
             p1 += 1
             p2 += 1
         if p1 < len(word1):
