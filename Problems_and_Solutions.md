@@ -1,6 +1,6 @@
 #LeetCode problems solutions
 
-__still updates__
+_still updates_
 
 - Merge Strings Alternately [link](https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
@@ -29,4 +29,10 @@ class Solution:
         # gcd - Greatest Common Diviser
         max_length = gcd(len(str1), len(str2))
         return str1[:max_length]
+```
+- Reverse Words in a String [link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
+```python
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        return ' '.join(s.split()[::-1])
 ```
