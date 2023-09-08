@@ -1,5 +1,6 @@
 - __EASY__ Merge Strings Alternately [link](https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
+# Fast but memory-heavy
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
         p1, p2 = 0, 0
@@ -13,6 +14,11 @@ class Solution:
         elif p2 < len(word2):
             ans += word2[p2:]
         return ans
+
+# Slow but memory-light
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+        return "".join(a + b for a, b in zip(word1, word2)) + word1[len(word2):] + word2[len(word1):]
 ```
 
 - __EASY__ Greatest Common Divisor of Strings [link](https://leetcode.com/problems/greatest-common-divisor-of-strings/description/?envType=study-plan-v2&envId=leetcode-75)
