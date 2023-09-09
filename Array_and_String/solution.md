@@ -31,6 +31,21 @@ class Solution:
         max_length = gcd(len(str1), len(str2))
         return str1[:max_length]
 ```
+
+- __EASY__ Kids With the Greatest Number of Candies [link](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description/?envType=study-plan-v2&envId=leetcode-75)
+```python
+class Solution:
+    def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
+        max_candies = max(candies)
+        ans = [] * len(candies)
+        for i in range(len(candies)):
+            if candies[i] + extraCandies >= max_candies:
+                ans.append(True)
+            else:
+                ans.append(False)
+        return ans
+```
+
 - __MEDIUM__ Reverse Words in a String [link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
