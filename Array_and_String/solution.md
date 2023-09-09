@@ -44,6 +44,11 @@ class Solution:
             else:
                 ans.append(False)
         return ans
+# Shorter version
+class Solution:
+    def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
+        diff = max(candies) - extraCandies
+        return [candy >= diff for candy in candies]
 ```
 
 - __MEDIUM__ Reverse Words in a String [link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
