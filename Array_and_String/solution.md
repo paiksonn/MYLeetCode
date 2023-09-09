@@ -74,3 +74,16 @@ class Solution:
             postfix = postfix * nums[n-i-1]
         return(ans)
 ```
+
+- __MEDIUM__ Increasing Triplet Subsequence [link](https://leetcode.com/problems/increasing-triplet-subsequence/description/?envType=study-plan-v2&envId=leetcode-75)
+```python
+class Solution:
+    def increasingTriplet(self, nums: List[int]) -> bool:
+        first, second = inf, inf
+        for third in nums:
+            if second < third: return True
+            if third <= first: first= third    
+            else:  second = third 
+                
+        return  False
+```
