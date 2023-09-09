@@ -44,6 +44,7 @@ class Solution:
             else:
                 ans.append(False)
         return ans
+
 # Shorter version
 class Solution:
     def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
@@ -58,3 +59,18 @@ class Solution:
         return ' '.join(s.split()[::-1])
 ```
 
+- __MEDIUM__ Product of Array Except Self [link](https://leetcode.com/problems/product-of-array-except-self/description/?envType=study-plan-v2&envId=leetcode-75)
+ ```python
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        ans = [1] * n
+        prefix = 1
+        postfix = 1
+        for i in range(n):
+            ans[i] *= prefix
+            prefix = prefix * nums[i]
+            ans[n-i-1] *= postfix
+            postfix = postfix * nums[n-i-1]
+        return(ans)
+```
