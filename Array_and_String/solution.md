@@ -68,6 +68,26 @@ class Solution:
         return n <= 0
 ```
 
+- __EASY__ Reverse Vowels of a String [link](https://leetcode.com/problems/reverse-vowels-of-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
+```python
+class Solution:
+    def reverseVowels(self, s: str) -> str:
+        s = list(s)
+        n = len(s)
+        l, r = 0, n-1
+        letters = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+        while l < r:
+            if s[l] in letters and s[r] in letters:
+                s[l], s[r] = s[r], s[l]
+                l += 1
+                r -= 1
+            elif s[r] not in letters:
+                r -= 1
+            elif s[l] not in letters:
+                l += 1
+        return ''.join(s)
+```
+
 - __MEDIUM__ Reverse Words in a String [link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
