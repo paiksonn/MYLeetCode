@@ -1,5 +1,5 @@
 # MYLeetCode
-Basically just solving LeetCode problems and trying to prepare for the interview
+Basically just solving LeetCode problems and trying to prepare for the interviews
 
 _STILL UPDATING EVERY DAY_
 
