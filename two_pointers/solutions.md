@@ -30,3 +30,37 @@ class Solution:
                 left += 1
 ```
 
+- __EASY__ Is Subsequence [link](https://leetcode.com/problems/is-subsequence/?envType=study-plan-v2&envId=leetcode-75)
+```python
+# MY solution
+
+class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        subseq = list(s)
+        seq = list(t)
+        i = 0
+        if len(subseq) == 0:
+            return True
+        for c in seq:
+            if i < len(subseq) and c == subseq[i]:
+                i += 1
+        if i == len(subseq):
+            return True
+        else:
+            return False
+
+# Two-pointers solution
+
+class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+		## TIME COMPLEXITY : O(N) ##
+		## SPACE COMPLEXITY : O(1) ##
+
+        p1 = p2 = 0
+        while p1 < len(s) and p2 < len(t):
+            # move both pointers or just the right pointer
+            if s[p1] == t[p2]:
+                p1 += 1
+            p2 += 1
+        return p1 == len(s)
+```
