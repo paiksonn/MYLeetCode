@@ -79,3 +79,23 @@ class Solution:
                 r -= 1
         return area
 ```
+
+- __MEDIUM__ Max Number of K-Sum Pairs [link](https://leetcode.com/problems/max-number-of-k-sum-pairs/)
+```python
+class Solution:
+    def maxOperations(self, nums: List[int], k: int) -> int:
+        nums.sort()
+        l, r, counter = 0, len(nums) - 1, 0
+        while l < r:
+            summ = nums[l] + nums[r]
+            if summ == k:
+                counter += 1
+                l += 1
+                r -= 1
+            elif summ < k:
+                l += 1
+            else:
+                r -= 1
+        return counter
+
+```
