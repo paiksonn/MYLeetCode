@@ -8,3 +8,4 @@ Themes of problems:
 2. [Two-pointers](https://github.com/paiksonn/MYLeetCode/tree/main/two_pointers)
 3. [Sliding window](https://github.com/paiksonn/MYLeetCode/tree/main/Sliding_window)
 4. [Prefix Sum](https://github.com/paiksonn/MYLeetCode/tree/main/Prefix_sum)
+5. [Hash map and Set](https://github.com/paiksonn/MYLeetCode/tree/main/Hash_map%20and%20Set)
