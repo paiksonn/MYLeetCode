@@ -34,3 +34,12 @@ class Solution:
         return c1.keys() == c2.keys() and sorted(c1.values()) == sorted(c2.values())
 ```
 
+- __MEDIUM__ Equal Row and Column Pairs [link](https://leetcode.com/problems/equal-row-and-column-pairs/?envType=study-plan-v2&envId=leetcode-75)
+```python
+class Solution:
+    def equalPairs(self, grid: List[List[int]]) -> int:
+        freq = Counter(tuple(row) for row in grid)
+        # zip(*grid) gives as a transpose matrix
+        return sum(freq[tuple(col)] for col in zip(*grid))
+```
+
