@@ -24,3 +24,13 @@ class Solution:
         return True
 ```
 
+- __MEDIUM__ Determine if Two Strings Are Close [link](https://leetcode.com/problems/determine-if-two-strings-are-close/description/?envType=study-plan-v2&envId=leetcode-75)
+```python
+from collections import Counter
+
+class Solution:
+    def closeStrings(self, word1: str, word2: str) -> bool:
+        c1, c2 = Counter(word1), Counter(word2)
+        return c1.keys() == c2.keys() and sorted(c1.values()) == sorted(c2.values())
+```
+
