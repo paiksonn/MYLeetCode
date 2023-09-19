@@ -36,3 +36,58 @@ class Solution:
         return head
 ```
 
+- __MEDIUM__ Odd Even Linked List [link](https://leetcode.com/problems/odd-even-linked-list/?envType=study-plan-v2&envId=leetcode-75)
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def oddEvenList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head:
+            return head
+        odd, even = head, head.next
+        even_head = even
+        while odd and even and even.next and odd.next:
+            odd.next = even.next
+            odd = odd.next
+            even.next = odd.next
+            even = even.next
+        odd.next = even_head
+        return head
+```
+
+- __MEDIUM__ Maximum Twin Sum of a Linked List [link](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/?envType=study-plan-v2&envId=leetcode-75)
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def pairSum(self, head):
+        slow = head
+        fast = head
+        maxVal = 0
+
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+
+        nextNode, prev = None, None
+        while slow:
+            nextNode = slow.next
+            slow.next = prev
+            prev = slow
+            slow = nextNode
+
+        while prev:
+            maxVal = max(maxVal, head.val + prev.val)
+            prev = prev.next
+            head = head.next
+
+        return maxVal
+        
+```
+
