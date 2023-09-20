@@ -12,3 +12,5 @@ Themes of problems:
 6. [Stack](https://github.com/paiksonn/MYLeetCode/tree/main/Stack)
 7. [Queue](https://github.com/paiksonn/MYLeetCode/tree/main/Queue)
 8. [Linked list]()
+9. [Binary Tree - DFS](https://github.com/paiksonn/MYLeetCode/tree/main/Binary%20Tree%20-%20DFS)
+10. [Bineary Search](https://github.com/paiksonn/MYLeetCode/tree/main/Binary%20Search)
