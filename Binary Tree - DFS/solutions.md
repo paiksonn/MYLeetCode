@@ -54,5 +54,8 @@ class Solution:
 
 ```
 
+- __MEDIUM__ Path Sum III [link](https://leetcode.com/problems/path-sum-iii/?envType=study-plan-v2&envId=leetcode-75)
+```python
 
+```
 
