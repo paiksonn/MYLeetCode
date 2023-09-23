@@ -14,3 +14,4 @@ Themes of problems:
 8. [Linked list]()
 9. [Binary Tree - DFS](https://github.com/paiksonn/MYLeetCode/tree/main/Binary%20Tree%20-%20DFS)
 10. [Binary Search](https://github.com/paiksonn/MYLeetCode/tree/main/Binary%20Search)
+11. [Dynamic Programming - 1D](https://github.com/paiksonn/MYLeetCode/tree/main/Dynamic%20programming%20-%201D)
