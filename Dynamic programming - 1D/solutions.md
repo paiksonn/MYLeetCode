@@ -44,3 +44,13 @@ class Solution:
         return dp[-1]
 ```
 
+- __MEDIUM__ Domino and Tromino Tiling [link](https://leetcode.com/problems/domino-and-tromino-tiling/description/?envType=study-plan-v2&envId=leetcode-75)
+```python
+class Solution(object):
+    def numTilings(self, n):
+        dp = [1, 2, 5] + [0] * n
+        for i in range(3, n):
+            dp[i] = (dp[i - 1] * 2 + dp[i - 3]) % 1000000007
+        return dp[n - 1]
+```
+
