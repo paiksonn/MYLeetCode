@@ -1,4 +1,6 @@
-- __EASY__ #1. Two Sum [link](https://leetcode.com/problems/two-sum/description/)
+__EASY__ 
+
+- #1. Two Sum [link](https://leetcode.com/problems/two-sum/description/)
 ```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
