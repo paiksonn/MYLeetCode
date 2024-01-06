@@ -44,7 +44,9 @@ class Solution:
         return True
 ```
 
-- __MEDIUM__ Determine if Two Strings Are Close [link](https://leetcode.com/problems/determine-if-two-strings-are-close/description/?envType=study-plan-v2&envId=leetcode-75)
+- __MEDIUM__
+  
+- #1657 Determine if Two Strings Are Close [link](https://leetcode.com/problems/determine-if-two-strings-are-close/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 from collections import Counter
 
@@ -54,7 +56,7 @@ class Solution:
         return c1.keys() == c2.keys() and sorted(c1.values()) == sorted(c2.values())
 ```
 
-- __MEDIUM__ Equal Row and Column Pairs [link](https://leetcode.com/problems/equal-row-and-column-pairs/?envType=study-plan-v2&envId=leetcode-75)
+- #2352 Equal Row and Column Pairs [link](https://leetcode.com/problems/equal-row-and-column-pairs/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def equalPairs(self, grid: List[List[int]]) -> int:
