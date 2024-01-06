@@ -1,4 +1,6 @@
-- __EASY__ Maximum Depth of Binary Tree [link](https://leetcode.com/problems/maximum-depth-of-binary-tree/?envType=study-plan-v2&envId=leetcode-75)
+__EASY__ 
+
+- #104 Maximum Depth of Binary Tree [link](https://leetcode.com/problems/maximum-depth-of-binary-tree/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 # Definition for a binary tree node.
 # class TreeNode:
@@ -15,7 +17,7 @@ class Solution:
         return dfs(root, 0)
 ```
 
-- __EASY__ Leaf-Similar Trees [link](https://leetcode.com/problems/leaf-similar-trees/?envType=study-plan-v2&envId=leetcode-75)
+- #872 Leaf-Similar Trees [link](https://leetcode.com/problems/leaf-similar-trees/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 # Definition for a binary tree node.
 # class TreeNode:
@@ -33,7 +35,9 @@ class Solution:
         return dfs(root1) == dfs(root2)
 ```
 
-- __MEDIUM__ Count Good Nodes in Binary Tree [link](https://leetcode.com/problems/count-good-nodes-in-binary-tree/?envType=study-plan-v2&envId=leetcode-75)
+__MEDIUM__ 
+
+- #1448 Count Good Nodes in Binary Tree [link](https://leetcode.com/problems/count-good-nodes-in-binary-tree/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 # Definition for a binary tree node.
 # class TreeNode:
@@ -53,9 +57,3 @@ class Solution:
         return dfs(root, root.val)
 
 ```
-
-- __MEDIUM__ Path Sum III [link](https://leetcode.com/problems/path-sum-iii/?envType=study-plan-v2&envId=leetcode-75)
-```python
-
-```
-
