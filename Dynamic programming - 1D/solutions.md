@@ -1,4 +1,6 @@
-- __EASY__ N-th Tribonacci Number [link](https://leetcode.com/problems/n-th-tribonacci-number/?envType=study-plan-v2&envId=leetcode-75)
+__EASY__ 
+
+- #1137 N-th Tribonacci Number [link](https://leetcode.com/problems/n-th-tribonacci-number/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 from collections import defaultdict
 
@@ -11,7 +13,7 @@ class Solution:
         return memo[n]
 ```
 
-- __EASY__ Min Cost Climbing Stairs [link](https://leetcode.com/problems/min-cost-climbing-stairs/?envType=study-plan-v2&envId=leetcode-75)
+- #746 Min Cost Climbing Stairs [link](https://leetcode.com/problems/min-cost-climbing-stairs/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
      def minCostClimbingStairs(self, cost: List[int]) -> int:
@@ -27,7 +29,9 @@ class Solution:
         return min(dp[-1], dp[-2])
 ```
 
-- __MEDIUM__ House Robber [link](https://leetcode.com/problems/house-robber/description/?envType=study-plan-v2&envId=leetcode-75)
+__MEDIUM__ 
+
+- #198 House Robber [link](https://leetcode.com/problems/house-robber/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def rob(self, nums: List[int]) -> int:
@@ -44,7 +48,7 @@ class Solution:
         return dp[-1]
 ```
 
-- __MEDIUM__ Domino and Tromino Tiling [link](https://leetcode.com/problems/domino-and-tromino-tiling/description/?envType=study-plan-v2&envId=leetcode-75)
+- #790 Domino and Tromino Tiling [link](https://leetcode.com/problems/domino-and-tromino-tiling/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution(object):
     def numTilings(self, n):
