@@ -1,4 +1,6 @@
-- __EASY__ Guess Number Higher or Lower [link](https://leetcode.com/problems/guess-number-higher-or-lower/?envType=study-plan-v2&envId=leetcode-75)
+__EASY__ 
+
+- #374 Guess Number Higher or Lower [link](https://leetcode.com/problems/guess-number-higher-or-lower/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 # The guess API is already defined for you.
 # @param num, your guess
@@ -22,7 +24,9 @@ class Solution:
 
 ```
 
-- __MEDIUM__ Successful Pairs of Spells and Potions [link](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/?envType=study-plan-v2&envId=leetcode-75)
+__MEDIUM__ 
+
+- #2300 Successful Pairs of Spells and Potions [link](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
@@ -42,7 +46,7 @@ class Solution:
         return ans
 ```
 
-- __MEDIUM__ Find Peak Element [link](https://leetcode.com/problems/find-peak-element/?envType=study-plan-v2&envId=leetcode-75)
+- #162 Find Peak Element [link](https://leetcode.com/problems/find-peak-element/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def findPeakElement(self, nums: List[int]) -> int:
