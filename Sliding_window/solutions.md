@@ -58,7 +58,7 @@ class Solution:
       return right - left + 1
 ```
 
-_ #1493 Longest Subarray of 1's After Deleting One Element [link](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/?envType=study-plan-v2&envId=leetcode-75)
+- #1493 Longest Subarray of 1's After Deleting One Element [link](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def longestSubarray(self, nums: List[int]) -> int:
