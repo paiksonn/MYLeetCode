@@ -1,4 +1,6 @@
-- __EASY__ Number of Recent Calls [link](https://leetcode.com/problems/number-of-recent-calls/description/?envType=study-plan-v2&envId=leetcode-75)
+__EASY__ 
+
+- #933 Number of Recent Calls [link](https://leetcode.com/problems/number-of-recent-calls/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class RecentCounter:
 
@@ -19,7 +21,9 @@ class RecentCounter:
 # param_1 = obj.ping(t)
 ```
 
-- __MEDIUM__ Dota2 Senate [link](https://leetcode.com/problems/dota2-senate/)
+__MEDIUM__ 
+
+- #649 Dota2 Senate [link](https://leetcode.com/problems/dota2-senate/)
 ```python
 class Solution:
     def predictPartyVictory(self, senate: str) -> str:
