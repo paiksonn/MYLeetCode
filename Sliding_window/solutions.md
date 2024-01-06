@@ -1,4 +1,6 @@
-- __EASY__ Maximum Average Subarray I [link](https://leetcode.com/problems/maximum-average-subarray-i/?envType=study-plan-v2&envId=leetcode-75)
+__EASY__ 
+
+- #643 Maximum Average Subarray I [link](https://leetcode.com/problems/maximum-average-subarray-i/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def findMaxAverage(self, nums: List[int], k: int) -> float:
@@ -10,7 +12,9 @@ class Solution:
         return best / k
 ```
 
-- __MEDIUM__ Maximum Number of Vowels in a Substring of Given Length [link](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/?envType=study-plan-v2&envId=leetcode-75)
+__MEDIUM__ 
+
+- #1456 Maximum Number of Vowels in a Substring of Given Length [link](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def maxVowels(self, s: str, k: int) -> int:
@@ -29,7 +33,7 @@ class Solution:
         return answer
 ```
 
-- __MEDIUM__ Max Consecutive Ones III [link](https://leetcode.com/problems/max-consecutive-ones-iii/?envType=study-plan-v2&envId=leetcode-75)
+- #1004 Max Consecutive Ones III [link](https://leetcode.com/problems/max-consecutive-ones-iii/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def longestOnes(self, A: List[int], K: int) -> int:
@@ -54,7 +58,7 @@ class Solution:
       return right - left + 1
 ```
 
-_ __MEDIUM__ Longest Subarray of 1's After Deleting One Element [link](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/?envType=study-plan-v2&envId=leetcode-75)
+_ #1493 Longest Subarray of 1's After Deleting One Element [link](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def longestSubarray(self, nums: List[int]) -> int:
