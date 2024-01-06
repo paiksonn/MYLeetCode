@@ -1,4 +1,6 @@
-- __EASY__ Merge Strings Alternately [link](https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75)
+__EASY__ 
+
+- #1768 Merge Strings Alternately [link](https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 # Fast but memory-heavy
 class Solution:
@@ -21,7 +23,7 @@ class Solution:
         return "".join(a + b for a, b in zip(word1, word2)) + word1[len(word2):] + word2[len(word1):]
 ```
 
-- __EASY__ Greatest Common Divisor of Strings [link](https://leetcode.com/problems/greatest-common-divisor-of-strings/description/?envType=study-plan-v2&envId=leetcode-75)
+- #1071 Greatest Common Divisor of Strings [link](https://leetcode.com/problems/greatest-common-divisor-of-strings/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def gcdOfStrings(self, str1: str, str2: str) -> str:
@@ -32,7 +34,7 @@ class Solution:
         return str1[:max_length]
 ```
 
-- __EASY__ Kids With the Greatest Number of Candies [link](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description/?envType=study-plan-v2&envId=leetcode-75)
+- #1431 Kids With the Greatest Number of Candies [link](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
@@ -52,7 +54,7 @@ class Solution:
         return [candy >= diff for candy in candies]
 ```
 
-- __EASY__ Can Place Flowers [link](https://leetcode.com/problems/can-place-flowers/description/?envType=study-plan-v2&envId=leetcode-75)
+- #605 Can Place Flowers [link](https://leetcode.com/problems/can-place-flowers/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
@@ -68,7 +70,7 @@ class Solution:
         return n <= 0
 ```
 
-- __EASY__ Reverse Vowels of a String [link](https://leetcode.com/problems/reverse-vowels-of-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
+- #345 Reverse Vowels of a String [link](https://leetcode.com/problems/reverse-vowels-of-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def reverseVowels(self, s: str) -> str:
