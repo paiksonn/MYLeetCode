@@ -1,4 +1,6 @@
-- __EASY__ Find the Highest Altitude [link](https://leetcode.com/problems/find-the-highest-altitude/?envType=study-plan-v2&envId=leetcode-75)
+__EASY__ 
+
+- #1732 Find the Highest Altitude [link](https://leetcode.com/problems/find-the-highest-altitude/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def largestAltitude(self, gain: List[int]) -> int:
@@ -11,7 +13,7 @@ class Solution:
         return max_sum
 ```
 
-- __EASY__ Find Pivot Index [link](https://leetcode.com/problems/find-pivot-index/?envType=study-plan-v2&envId=leetcode-75)
+- #724 Find Pivot Index [link](https://leetcode.com/problems/find-pivot-index/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 # REALLY slow decision but i did it myself ^^
 
