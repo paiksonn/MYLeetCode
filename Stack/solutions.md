@@ -1,3 +1,19 @@
+__EASY__
+
+- #20 Valid Parentheses [link](https://leetcode.com/problems/valid-parentheses/description/)
+```python
+class Solution:
+    def isValid(self, s: str) -> bool:
+        d = {'(':')', '{':'}','[':']'}
+        stack = []
+        for i in s:
+            if i in d:  
+                stack.append(i)
+            elif len(stack) == 0 or d[stack.pop()] != i:  
+                return False
+        return len(stack) == 0 
+```
+
 __MEDIUM__ 
 
 - #2390 Removing Stars From a String [link](https://leetcode.com/problems/removing-stars-from-a-string/?envType=study-plan-v2&envId=leetcode-75)
