@@ -1,7 +1,7 @@
 # MYLeetCode
 Basically just solving LeetCode problems and trying to prepare for the interviews
 
-_STILL UPDATING EVERY DAY_
+_STILL UPDATING (almost) EVERY DAY_
 
 Themes of problems:
 1. [Array and String manipulation](https://github.com/paiksonn/MYLeetCode/tree/main/Array_and_String)
