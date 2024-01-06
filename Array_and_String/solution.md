@@ -90,14 +90,16 @@ class Solution:
         return ''.join(s)
 ```
 
-- __MEDIUM__ Reverse Words in a String [link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
+__MEDIUM__ 
+
+- #151 Reverse Words in a String [link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def reverseWords(self, s: str) -> str:
         return ' '.join(s.split()[::-1])
 ```
 
-- __MEDIUM__ Product of Array Except Self [link](https://leetcode.com/problems/product-of-array-except-self/description/?envType=study-plan-v2&envId=leetcode-75)
+- #238 Product of Array Except Self [link](https://leetcode.com/problems/product-of-array-except-self/description/?envType=study-plan-v2&envId=leetcode-75)
  ```python
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
@@ -113,7 +115,7 @@ class Solution:
         return(ans)
 ```
 
-- __MEDIUM__ Increasing Triplet Subsequence [link](https://leetcode.com/problems/increasing-triplet-subsequence/description/?envType=study-plan-v2&envId=leetcode-75)
+- #334 Increasing Triplet Subsequence [link](https://leetcode.com/problems/increasing-triplet-subsequence/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def increasingTriplet(self, nums: List[int]) -> bool:
@@ -126,7 +128,7 @@ class Solution:
         return  False
 ```
 
-- __MEDIUM__ String Compression [link](https://leetcode.com/problems/string-compression/description/?envType=study-plan-v2&envId=leetcode-75)
+- #443 String Compression [link](https://leetcode.com/problems/string-compression/description/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
   def compress(self, chars: List[str]) -> int:
@@ -148,7 +150,7 @@ class Solution:
 
     return ans
 ```
-- __MEDIUM__ 3Sum [link](https://leetcode.com/problems/3sum/)
+- #15 3Sum [link](https://leetcode.com/problems/3sum/)
 ```python
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
@@ -172,7 +174,7 @@ class Solution:
         return triplets
 ```
 
-- __MEDIUM__ 3Sum Closest [link](https://leetcode.com/problems/3sum-closest/description/)
+- #16 3Sum Closest [link](https://leetcode.com/problems/3sum-closest/description/)
 ```python
 class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
