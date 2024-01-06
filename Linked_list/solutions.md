@@ -1,4 +1,6 @@
-- __EASY__ Reverse Linked List [link](https://leetcode.com/problems/reverse-linked-list/?envType=study-plan-v2&envId=leetcode-75)
+__EASY__ 
+
+- #206 Reverse Linked List [link](https://leetcode.com/problems/reverse-linked-list/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 # Definition for singly-linked list.
 # class ListNode:
@@ -17,7 +19,9 @@ class Solution(object):
         return prev     
 ```
 
-- __MEDIUM__ Delete the Middle Node of a Linked List [link](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/?envType=study-plan-v2&envId=leetcode-75)
+__MEDIUM__ 
+
+- #2095 Delete the Middle Node of a Linked List [link](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 # Definition for singly-linked list.
 # class ListNode:
@@ -36,7 +40,7 @@ class Solution:
         return head
 ```
 
-- __MEDIUM__ Odd Even Linked List [link](https://leetcode.com/problems/odd-even-linked-list/?envType=study-plan-v2&envId=leetcode-75)
+- #328 Odd Even Linked List [link](https://leetcode.com/problems/odd-even-linked-list/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 # Definition for singly-linked list.
 # class ListNode:
@@ -58,7 +62,7 @@ class Solution:
         return head
 ```
 
-- __MEDIUM__ Maximum Twin Sum of a Linked List [link](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/?envType=study-plan-v2&envId=leetcode-75)
+- #2130 Maximum Twin Sum of a Linked List [link](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 # Definition for singly-linked list.
 # class ListNode:
