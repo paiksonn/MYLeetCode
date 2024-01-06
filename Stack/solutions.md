@@ -1,4 +1,6 @@
-- __MEDIUM__ Removing Stars From a String [link](https://leetcode.com/problems/removing-stars-from-a-string/?envType=study-plan-v2&envId=leetcode-75)
+__MEDIUM__ 
+
+- #2390 Removing Stars From a String [link](https://leetcode.com/problems/removing-stars-from-a-string/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def removeStars(self, s: str) -> str:
@@ -11,7 +13,7 @@ class Solution:
         return ''.join(ans)
 ```
 
-- __MEDIUM__ Asteroid Collision [link](https://leetcode.com/problems/asteroid-collision/?envType=study-plan-v2&envId=leetcode-75)
+- #735 Asteroid Collision [link](https://leetcode.com/problems/asteroid-collision/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def asteroidCollision(self, asteroids: List[int]) -> List[int]:
@@ -25,7 +27,7 @@ class Solution:
         return stack
 ```
 
-- __MEDIUM__ Decode String [link](https://leetcode.com/problems/decode-string/?envType=study-plan-v2&envId=leetcode-75)
+- #394 Decode String [link](https://leetcode.com/problems/decode-string/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def decodeString(self, s: str) -> str:
