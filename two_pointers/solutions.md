@@ -1,4 +1,6 @@
-- __EASY__ Move Zeroes [link](https://leetcode.com/problems/move-zeroes/?envType=study-plan-v2&envId=leetcode-75)
+__EASY__ 
+
+- #283 Move Zeroes [link](https://leetcode.com/problems/move-zeroes/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 # Brutforce solution
 
@@ -30,7 +32,7 @@ class Solution:
                 left += 1
 ```
 
-- __EASY__ Is Subsequence [link](https://leetcode.com/problems/is-subsequence/?envType=study-plan-v2&envId=leetcode-75)
+- #392 Is Subsequence [link](https://leetcode.com/problems/is-subsequence/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 # MY solution
 
@@ -65,7 +67,9 @@ class Solution:
         return p1 == len(s)
 ```
 
-- __MEDIUM__ Container With Most Water [link](https://leetcode.com/problems/container-with-most-water/?envType=study-plan-v2&envId=leetcode-75)
+__MEDIUM__ 
+
+- #11 Container With Most Water [link](https://leetcode.com/problems/container-with-most-water/?envType=study-plan-v2&envId=leetcode-75)
 ```python
 class Solution:
     def maxArea(self, height: List[int]) -> int:
@@ -80,7 +84,7 @@ class Solution:
         return area
 ```
 
-- __MEDIUM__ Max Number of K-Sum Pairs [link](https://leetcode.com/problems/max-number-of-k-sum-pairs/)
+- #1679 Max Number of K-Sum Pairs [link](https://leetcode.com/problems/max-number-of-k-sum-pairs/)
 ```python
 class Solution:
     def maxOperations(self, nums: List[int], k: int) -> int:
