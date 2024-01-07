@@ -103,6 +103,19 @@ class Solution:
                 
 ```
 
+- #121 Best Time to Buy and Sell Stock [link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
+```python
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        max_profit = 0
+        min_purchase = prices[0]
+        for i in range(1, len(prices)):		
+            max_profit = max(max_profit, prices[i] - min_purchase)
+            min_purchase = min(min_purchase, prices[i])
+
+        return max_profit
+```
+
 __MEDIUM__ 
 
 - #151 Reverse Words in a String [link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
