@@ -90,6 +90,19 @@ class Solution:
         return ''.join(s)
 ```
 
+- #27 Remove Element [link](https://leetcode.com/problems/remove-element/description/)
+```python
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        index = 0
+        for i in range(len(nums)):
+            if nums[i] != val:
+                nums[index] = nums[i]
+                index += 1
+        return index
+                
+```
+
 __MEDIUM__ 
 
 - #151 Reverse Words in a String [link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
