@@ -125,6 +125,23 @@ class Solution:
 ```
 
 
+- #205 Isomorphic Strings [link](https://leetcode.com/problems/isomorphic-strings/description/)
+```python
+class Solution:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        map1 = []
+        map2 = []
+
+        for idx in s:
+            map1.append(s.index(idx))
+
+        for idx in t:
+            map2.append(t.index(idx))
+
+        return map1 == map2
+```
+
+
 __MEDIUM__ 
 
 - #151 Reverse Words in a String [link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
