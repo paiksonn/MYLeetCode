@@ -44,6 +44,31 @@ class Solution:
         return True
 ```
 
+- #169 Majority Element [link](https://leetcode.com/problems/majority-element/description/)
+```python
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        threshhlod = len(nums) // 2
+        numbers = {}
+
+        for i in nums:
+            if i in numbers:
+                numbers[i] += 1
+            else:
+                numbers[i] = 1
+        
+        max_el = 0
+        ans = 0
+        for key, value in numbers.items():
+            print(max_el)
+            if value > max_el:
+                max_el = value
+                ans = key
+        
+        return ans
+```
+
+
 __MEDIUM__
   
 - #1657 Determine if Two Strings Are Close [link](https://leetcode.com/problems/determine-if-two-strings-are-close/description/?envType=study-plan-v2&envId=leetcode-75)
