@@ -60,7 +60,6 @@ class Solution:
         max_el = 0
         ans = 0
         for key, value in numbers.items():
-            print(max_el)
             if value > max_el:
                 max_el = value
                 ans = key
