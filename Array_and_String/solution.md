@@ -116,6 +116,15 @@ class Solution:
         return max_profit
 ```
 
+- #125 Valid Palindrome [link](https://leetcode.com/problems/valid-palindrome/description/)
+```python
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        correct_str = ''.join(item.lower() for item in s if item.isalnum())
+        return correct_str == correct_str[::-1]
+```
+
+
 __MEDIUM__ 
 
 - #151 Reverse Words in a String [link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
