@@ -142,6 +142,14 @@ class Solution:
 ```
 
 
+- #977 Squares of a Sorted Array [link](https://leetcode.com/problems/squares-of-a-sorted-array/description/)
+```python
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        return sorted([num**2 for num in nums])
+```
+
+
 __MEDIUM__ 
 
 - #151 Reverse Words in a String [link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
