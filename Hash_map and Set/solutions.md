@@ -67,6 +67,18 @@ class Solution:
         return ans
 ```
 
+- #657 Robot Return to Origin [link](https://leetcode.com/problems/robot-return-to-origin/description/)
+```python
+class Solution:
+    def judgeCircle(self, moves: str) -> bool:
+        lib = {'R':0, 'L':0, 'U':0, 'D':0}
+        for move in moves:
+            lib[move] += 1
+
+        return (lib['R'] - lib['L'] == 0) & (lib['U'] - lib['D'] == 0)
+
+```
+
 
 __MEDIUM__
   
