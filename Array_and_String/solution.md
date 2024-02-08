@@ -190,6 +190,25 @@ class Solution:
 ```
 
 
+- #88 Merge Sorted Array [link](https://leetcode.com/problems/merge-sorted-array/description/)
+```python
+class Solution:
+    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+
+        a, b, write_index = m-1, n-1, m + n - 1
+
+        while b >= 0:
+            if a >= 0 and nums1[a] > nums2[b]:
+                nums1[write_index] = nums1[a]
+                a -= 1
+            else:
+                nums1[write_index] = nums2[b]
+                b -= 1
+
+            write_index -= 1
+```
+
+
 __MEDIUM__ 
 
 - #151 Reverse Words in a String [link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
