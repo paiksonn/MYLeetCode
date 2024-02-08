@@ -235,6 +235,16 @@ class Solution:
 ```
 
 
+- #268 Missing Number [link](https://leetcode.com/problems/missing-number/description/)
+```python
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        n = len(nums)
+        # sum of n elements is (n * (n+1))/2 where `n` is the length of input `nums`.
+        return (n * (n + 1)) // 2 - sum(nums)
+```
+
+
 __MEDIUM__ 
 
 - #151 Reverse Words in a String [link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
