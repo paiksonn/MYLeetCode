@@ -174,6 +174,22 @@ class Solution:
 ```
 
 
+- #1446 Consecutive Characters [link](https://leetcode.com/problems/consecutive-characters/description/)
+```python
+class Solution:
+    def maxPower(self, s: str) -> int:
+        counter, max_counter = 1, 1
+        for i in range(1, len(s)):
+            if s[i] == s[i-1]:
+                counter += 1
+                max_counter = max(max_counter, counter)
+            else:
+                counter = 1
+
+        return max_counter
+```
+
+
 __MEDIUM__ 
 
 - #151 Reverse Words in a String [link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
