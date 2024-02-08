@@ -209,6 +209,32 @@ class Solution:
 ```
 
 
+- #771 Jewels and Stones [link](https://leetcode.com/problems/jewels-and-stones/description/)
+```python
+class Solution:
+    def numJewelsInStones(self, jewels: str, stones: str) -> int:
+        dic = {}
+        for j in jewels:
+            if j in dic:
+                dic[j] += 1
+            else:
+                dic[j] = 1
+        
+        counter = 0
+        for c in stones:
+            if c in dic.keys():
+                counter += 1
+        
+        return counter
+
+# one-liner
+
+class Solution:
+    def numJewelsInStones(self, jewels: str, stones: str) -> int:
+    	return sum(stones.count(i) for i in jewels)
+```
+
+
 __MEDIUM__ 
 
 - #151 Reverse Words in a String [link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
