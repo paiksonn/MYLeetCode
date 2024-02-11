@@ -245,6 +245,21 @@ class Solution:
 ```
 
 
+- #557 Reverse Words in a String III [link](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/)
+```python
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        # bag = s.split()
+        # ans = []
+        # for word in bag:
+        #     ans.append(word[::-1])
+        # return ' '.join(ans)
+
+        return ' '.join([word[::-1] for word in s.split()])
+
+```
+
+
 __MEDIUM__ 
 
 - #151 Reverse Words in a String [link](https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75)
