@@ -63,6 +63,25 @@ class Solution:
         return self.isSame(leftroot.left, rightroot.right) and self.isSame(leftroot.right, rightroot.left)
 ```
 
+
+- #938 Range Sum of BST [link](https://leetcode.com/problems/range-sum-of-bst/description/)
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
+        if not root:
+            return 0
+        return self.rangeSumBST(root.left, low, high) + \
+                self.rangeSumBST(root.right, low, high) + \
+                (root.val if low <= root.val <= high else 0)
+```
+
+
 __MEDIUM__ 
 
 - #1448 Count Good Nodes in Binary Tree [link](https://leetcode.com/problems/count-good-nodes-in-binary-tree/?envType=study-plan-v2&envId=leetcode-75)
