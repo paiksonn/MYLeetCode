@@ -80,6 +80,21 @@ class Solution:
 ```
 
 
+- #387 First Unique Character in a String [link](https://leetcode.com/problems/first-unique-character-in-a-string/description/)
+```python
+from collections import Counter 
+
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+        counted_dict = Counter(s)
+        for idx in range(len(s)):
+            if counted_dict[s[idx]] == 1:
+                return idx
+                
+        return -1  
+```
+
+
 __MEDIUM__
   
 - #1657 Determine if Two Strings Are Close [link](https://leetcode.com/problems/determine-if-two-strings-are-close/description/?envType=study-plan-v2&envId=leetcode-75)
