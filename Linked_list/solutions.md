@@ -45,6 +45,32 @@ class Solution:
 ```
 
 
+- #234 Palindrome Linked List [link](https://leetcode.com/problems/palindrome-linked-list/description/)
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def isPalindrome(self, head: Optional[ListNode]) -> bool:
+        stack = []
+        curr = head
+        while curr:
+            stack.append(curr.val)
+            curr = curr.next
+        
+        curr = head
+        while curr:
+            if curr.val != stack.pop():
+                return False
+            curr = curr.next
+            
+        return True
+
+```
+
+
 __MEDIUM__ 
 
 - #2095 Delete the Middle Node of a Linked List [link](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/?envType=study-plan-v2&envId=leetcode-75)
