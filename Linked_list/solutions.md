@@ -52,6 +52,8 @@ class Solution:
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
+# This solution is O(n) both time and space 
 class Solution:
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
         stack = []
@@ -68,6 +70,36 @@ class Solution:
             
         return True
 
+# Another solution with O(n) time and O(1) space
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def isPalindrome(self, head: Optional[ListNode]) -> bool:
+        if not head:
+            return True
+        
+        slow = fast = head
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+        
+        prev = None
+        while slow:
+            curr = slow
+            slow = slow.next
+            curr.next = prev
+            prev = curr
+
+        while prev:
+            if prev.val != head.val:
+                return False 
+            prev = prev.next
+            head = head.next
+
+        return True
 ```
 
 
